@@ -1,0 +1,12 @@
+Source: ros-hydro-korg-nanokontrol
+Section: misc
+Priority: extra
+Maintainer: Austin Hendrix <ahendrix@willowgarage.com>
+Build-Depends: debhelper (>= 7.0.50~), ros-hydro-catkin
+Homepage: http://ros.org/wiki/korg_nanokontrol
+Standards-Version: 3.9.2
+
+Package: ros-hydro-korg-nanokontrol
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, python-pygame, ros-hydro-rospy, ros-hydro-sensor-msgs
+Description: ROS driver to use the Kork NanoKontrol MIDI device as a joystick.
