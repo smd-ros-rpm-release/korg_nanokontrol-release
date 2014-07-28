@@ -46,13 +46,16 @@ tracks:
     - git-bloom-generate -y rosrelease :{ros_distro} --source upstream -i :{release_inc}
     - git-bloom-generate -y rosdebian --prefix release/:{ros_distro} :{ros_distro}
       -i :{release_inc}
+    - git-bloom-generate -y rosrpm --prefix release/:{ros_distro} :{ros_distro} -i
+      :{release_inc}
     devel_branch: null
     last_version: 0.1.1
     name: upstream
     patches: null
     release_inc: '0'
+    release_repo_url: git@github.com:ros-gbp/korg_nanokontrol-release.git
     release_tag: :{version}
-    ros_distro: hydro
+    ros_distro: indigo
     vcs_type: git
     vcs_uri: https://github.com/ros-drivers/korg_nanokontrol.git
     version: :{auto}
